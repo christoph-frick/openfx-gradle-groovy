@@ -1,0 +1,22 @@
+plugins {
+    id 'groovy'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+repositories {
+    jcenter()
+}
+
+javafx {
+    version = "11.0.2"
+    modules = [ 'javafx.controls' ]
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy:3.+'
+}
+
+application {
+    mainClassName = 'ofx.App'
+}
